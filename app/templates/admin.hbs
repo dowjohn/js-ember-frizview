@@ -1,2 +1,15 @@
-<h1>Create new post</h1>
-{{new-blog save="save"}}
+<div class="jumbotron findYourCenter">
+  <h1>Admin</h1>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <h4>Create new post</h4>
+    {{new-blog save="save"}}
+  </div>
+  <div class="col-sm-6">
+    {{#each model.blogs as |blog|}}
+      <p>{{blog.title}}</p>
+      <button {{action 'delete' blog}}>Delete</button>
+    {{/each}}
+  </div>
+</div>
