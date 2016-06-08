@@ -5,3 +5,22 @@
 .findYourCenter {
   text-align: center;
 }
+
+.boxModel {
+  border-top: firebrick solid 2px;
+  border-right: firebrick solid 2px;
+}
+
+.boxModelBox {
+  border-bottom: firebrick solid 2px;
+  border-right: firebrick solid 2px;
+  border-left: firebrick solid 2px;
+}
+
+body {
+  padding-top: 50px;
+}
+
+img {
+  width: 25%;
+}
