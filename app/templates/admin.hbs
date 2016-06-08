@@ -9,6 +9,7 @@
   <div class="col-sm-6">
     {{#each model.blogs as |blog|}}
       <p>{{blog.title}}</p>
+      {{update-blog blog=blog update="update"}}
       <button {{action 'delete' blog}}>Delete</button>
     {{/each}}
   </div>
