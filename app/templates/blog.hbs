@@ -1,0 +1,12 @@
+{{frizbee-tile blog=model}}
+<br>
+<h3>Comments:</h3>
+
+<ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.commenter}} says: {{comment.comment}}</li>
+  {{/each}}
+</ul><br><br>
+
+<h4>Leave a comment:</h4>
+{{new-comment save="save" blog=model}}
