@@ -14,7 +14,12 @@ export default Ember.Route.extend({
       this.transitionTo('admin');
     },
     delete(blog) {
-      blog.destroyRecord();
+      var comment_deletions = blog.get('comments').map(function(comment) {
+        return comment.destroyRecord();
+      });
+      Ember.RSVP.all(comment_deletions).then(function() {
+        return blog.destroyRecord();
+      });
       this.transitionTo('admin');
     },
     update(blog, params) {
