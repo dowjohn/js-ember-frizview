@@ -1,12 +1,12 @@
-<div class="jumbotron findYourCenter">
+<div class="mainBox findYourCenter">
   <h1>Admin</h1>
 </div>
 <div class="row">
-  <div class="col-sm-6 mainBox">
+  <div class="col-sm-5 mainBox">
     <h4>Create new post</h4>
     {{new-blog save="save"}}
   </div>
-  <div class="col-sm-6 mainBox">
+  <div class="col-sm-6 col-sm-offset-1 mainBox">
     {{#each model.blogs as |blog|}}
       <p>{{blog.title}}</p>
       {{update-blog blog=blog update="update"}}
