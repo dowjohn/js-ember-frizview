@@ -16,7 +16,7 @@
   <div class="mainBox col-sm-3 col-sm-offset-1">
     <h3>Quickbar</h3>
     {{#each model.blogs as |blog|}}
-      <p>{{blog.title}}</p>
+      <p class='quickies'>{{#link-to 'blog' blog.id}}{{blog.title}}{{/link-to}}</p>
     {{/each}}
   </div>
 </div>

@@ -35,3 +35,15 @@ img {
 input {
   color: black;
 }
+
+.quickies {
+  border: 1px solid black;
+  border-radius: 7px;
+  padding-left: 1px;
+  text-align: center;
+  background-color: #2c3e50;
+}
+
+.quickies a {
+  color: #9b59b6;
+}
