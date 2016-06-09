@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('titleUpdate'),
         author: this.get('authorUpdate'),
-        content: this.get('contentUpdate'),
+        text: this.get('textUpdate'),
         storelink: this.get('storelinkUpdate'),
         image: this.get('imageUpdate'),
       };
