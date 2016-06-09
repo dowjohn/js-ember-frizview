@@ -2,11 +2,11 @@
   <h1>Admin</h1>
 </div>
 <div class="row">
-  <div class="col-sm-6">
+  <div class="col-sm-6 mainBox">
     <h4>Create new post</h4>
     {{new-blog save="save"}}
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-6 mainBox">
     {{#each model.blogs as |blog|}}
       <p>{{blog.title}}</p>
       {{update-blog blog=blog update="update"}}
